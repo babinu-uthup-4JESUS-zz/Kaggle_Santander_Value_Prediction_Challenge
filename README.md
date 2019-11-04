@@ -26,31 +26,29 @@ This is my solution to the problem posted as part of the  [kaggle competition on
 
 ## Overview
 
-We have the following problem description from it's [corresponding kaggle competition link](https://www.kaggle.com/c/competitive-data-science-predict-future-sales/overview/description) :
->In this competition you will work with a challenging time-series dataset consisting of daily sales data, kindly provided by one of the largest Russian software firms - 1C Company. We are asking you to predict total sales for every product and store in the next month. By solving this competition you will be able to apply and enhance your data science skills.
+We have the following problem description from it's [corresponding kaggle competition link](https://www.kaggle.com/c/santander-value-prediction-challenge/overview/description) :
+>According to Epsilon research, 80% of customers are more likely to do business with you if you provide personalized service. Banking is no exception.
+
+>The digitalization of everyday lives means that customers expect services to be delivered in a personalized and timely manner… and often before they´ve even realized they need the service. In their 3rd Kaggle competition, Santander Group aims to go a step beyond recognizing that there is a need to provide a customer a financial service and intends to determine the amount or value of the customer's transaction. This means anticipating customer needs in a more concrete, but also simple and personal way. With so many choices for financial services, this need is greater now than ever before.
+
+>In this competition, Santander Group is asking Kagglers to help them identify the value of transactions for each potential customer. This is a first step that Santander needs to nail in order to personalize their services at scale.
 
 ## Data
 
-All the information pasted in this section has been obtained from the [this webpage (which shows data related information of the corresponding kaggle competition).](https://www.kaggle.com/c/competitive-data-science-predict-future-sales/data)
+All the information pasted in this section has been obtained from the [this webpage (which shows data related information of the corresponding kaggle competition).](https://www.kaggle.com/c/santander-value-prediction-challenge/data)
 
 
 ### Data Description
  
-You are provided with daily historical sales data. The task is to forecast the total amount of products sold in every shop for the test set. Note that the list of shops and products slightly changes every month. Creating a robust model that can handle such situations is part of the challenge.
+You are provided with an anonymized dataset containing numeric feature variables, the numeric target column, and a string ID column. The task is to predict the value of target column in the test set.
 
 ### File Descriptions
 
-- [sales_train.csv](https://github.com/babinu-uthup-4JESUS/Kaggle-Predict-Future-Sales/blob/master/input/sales_train.csv) - the training set. Daily historical data from January 2013 to October 2015.
+- [train.csv](https://github.com/babinu-uthup-4JESUS/Kaggle_Santander_Value_Prediction_Challenge/master/input/train.csv) - the training set.
 
-- [test.csv](https://github.com/babinu-uthup-4JESUS/Kaggle-Predict-Future-Sales/blob/master/input/test.csv) - the test set. You need to forecast the sales for these shops and products for November 2015.
+- [test.csv](https://github.com/babinu-uthup-4JESUS/Kaggle_Santander_Value_Prediction_Challenge/master/input/test.csv) - the test set.
 
-- [sample_submission.csv](https://github.com/babinu-uthup-4JESUS/Kaggle-Predict-Future-Sales/blob/master/input/sample_submission.csv) - a sample submission file in the correct format.
-
-- [items.csv](https://github.com/babinu-uthup-4JESUS/Kaggle-Predict-Future-Sales/blob/master/input/items.csv) - supplemental information about the items/products.
-
-- [item_categories.csv](https://github.com/babinu-uthup-4JESUS/Kaggle-Predict-Future-Sales/blob/master/input/item_categories.csv) - supplemental information about the items categories.
-
-- [shops.csv](https://github.com/babinu-uthup-4JESUS/Kaggle-Predict-Future-Sales/blob/master/input/shops.csv) - supplemental information about the shops.
+- [sample_submission.csv](https://github.com/babinu-uthup-4JESUS/Kaggle_Santander_Value_Prediction_Challenge/master/input/test.csv) - a sample submission file in the correct format.
 
 ### Data fields
 

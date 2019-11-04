@@ -44,11 +44,11 @@ You are provided with an anonymized dataset containing numeric feature variables
 
 ### File Descriptions
 
-- [train.csv](https://github.com/babinu-uthup-4JESUS/Kaggle_Santander_Value_Prediction_Challenge/master/input/train.csv) - the training set.
+- [train.csv](https://github.com/babinu-uthup-4JESUS/Kaggle_Santander_Value_Prediction_Challenge/blob/master/input/train.csv) - the training set.
 
-- [test.csv](https://github.com/babinu-uthup-4JESUS/Kaggle_Santander_Value_Prediction_Challenge/master/input/test.csv) - the test set.
+- test.csv - the test set.
 
-- [sample_submission.csv](https://github.com/babinu-uthup-4JESUS/Kaggle_Santander_Value_Prediction_Challenge/master/input/test.csv) - a sample submission file in the correct format.
+- [sample_submission.csv](https://github.com/babinu-uthup-4JESUS/Kaggle_Santander_Value_Prediction_Challenge/blob/master/input/test.csv) - a sample submission file in the correct format.
 
 ### Data fields
 

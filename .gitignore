@@ -1,2 +1,4 @@
 input/test.csv
+*.ipynb_checkpoints*
+
 

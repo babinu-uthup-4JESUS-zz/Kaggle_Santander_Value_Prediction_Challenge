@@ -40,18 +40,19 @@ index_one_se_lambda = which(holdcvout$lambda == one_se_lambda, arr.ind = TRUE)
 one_se_num_param = holdcvout$nzero[index_one_se_lambda]
 
 # Let us build models based on these lambdas
-glmouts = glmnet(X, Y, lambda = c(min_cv_lambda, one_se_lambda))
+glmout_min_cv = glmnet(X, Y, lambda = min_cv_lambda)
+glmout_one_se_cv = glmnet(X, Y, lambda = one_se_lambda)
 
 # Betas for the first model, that is the one corresponding to minimum cv score.
-glmouts$beta[(glmouts$beta[,1]!=0),1]
+glmout_min_cv$beta[(glmout_min_cv$beta[,1]!=0),1]
 
 # Betas for the second model, that is the one corresponding to 1 se cv score.
-glmouts$beta[(glmouts$beta[,2]!=0),2]
+glmout_one_se_cv$beta[(glmout_one_se_cv$beta[,1]!=0),1]
 
 # We would like to play around with these models, but let us do it in python. Hence let us
 # write these models to csv files, from which we can export to python for further analysis.
-write.csv(glmouts$beta[(glmouts$beta[,1]!=0),1] ,
+write.csv(glmout_min_cv$beta[(glmout_min_cv$beta[,1]!=0),1] ,
           paste(LASSO_MODELS_DIR, 'minimum_cv_lasso_model_columns_and_coefficients.csv', sep = ''))
 
-write.csv(glmouts$beta[(glmouts$beta[,2]!=0),2] ,
+write.csv(glmout_one_se_cv$beta[(glmout_one_se_cv$beta[,1]!=0),1] ,
           paste(LASSO_MODELS_DIR, 'one_se_cv_lasso_model_columns_and_coefficients.csv', sep = ''))

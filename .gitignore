@@ -1,4 +1,6 @@
 input/test.csv
 *.ipynb_checkpoints*
-
+lasso_models/*.csv
+lasso_models/*/*.csv
+lasso_models/*/*Rapp*
 

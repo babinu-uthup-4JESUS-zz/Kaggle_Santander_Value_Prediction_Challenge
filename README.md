@@ -12,6 +12,7 @@ This is my solution to the problem posted as part of the  [kaggle competition on
     - [File Descriptions](#file-descriptions)
 - [Approach](#approach)
     - [First look at data](#first-look-at-data)
+    - [Building simple models](#building-simple-models)    
 
 ## Overview
 
@@ -46,3 +47,7 @@ The approach is to have a thorough look at the data, validate the same and decid
 ### First look at data
 
 This has been carried out in [take_a_look_at_data.ipynb](https://github.com/babinu-uthup-4JESUS/Kaggle_Santander_Value_Prediction_Challenge/blob/master/first_look/take_a_look_at_data.ipynb). To summarize,  we went over the data, validated the same and concluded that nature of data itself warrants training of a lasso model on the same as the starting step.
+
+### Building simple models
+
+Lasso models have been constructed in the [R programming language](https://github.com/babinu-uthup-4JESUS/Kaggle_Santander_Value_Prediction_Challenge/blob/master/lasso_models/r_code/lasso.R) and predictions have been made over test data using [python](https://github.com/babinu-uthup-4JESUS/Kaggle_Santander_Value_Prediction_Challenge/blob/master/lasso_models/predict_with_lasso_model_from_coefficients.ipynb). While this was a good starting point, the models themselves do not look to be giving us much predictive power, as the prediction scores over the test set were only around 5.5.

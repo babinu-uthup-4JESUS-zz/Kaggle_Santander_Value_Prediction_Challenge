@@ -46,7 +46,7 @@ The approach is to have a thorough look at the data, validate the same and decid
 
 ### First look at data
 
-This has been carried out in [take_a_look_at_data.ipynb](https://github.com/babinu-uthup-4JESUS/Kaggle_Santander_Value_Prediction_Challenge/blob/master/first_look/take_a_look_at_data.ipynb). To summarize,  we went over the data, validated the same and concluded that nature of data itself warrants training of a lasso model on the same as the starting step.
+This has been carried out in [take_a_look_at_data.ipynb](https://github.com/babinu-uthup-4JESUS/Kaggle_Santander_Value_Prediction_Challenge/blob/master/first_look/take_a_look_at_data.ipynb). To summarize,  we went over the data, validated the same and concluded that nature of data itself warrants training of a lasso model on the same as a starting step.
 
 ### Building simple models
 
@@ -54,4 +54,4 @@ Lasso models have been constructed in the [R programming language](https://githu
 
 However, things looked a lot better when lasso models were constructed in [Python](https://github.com/babinu-uthup-4JESUS/Kaggle_Santander_Value_Prediction_Challenge/blob/master/lasso_models/lasso_in_python.ipynb), giving us a test score of around 1.99, while trained with the optimal value of the lasso parameter, which in turned was obtained by cross validation on the training set.
 
-A combination of lasso and gradient boosting was [explored](https://github.com/babinu-uthup-4JESUS/Kaggle_Santander_Value_Prediction_Challenge/blob/master/xgboost_models/combine_xgboost_with_lasso.ipynb), but did not give any tangible benefit.
+A combination of lasso and gradient boosting methods was [explored](https://github.com/babinu-uthup-4JESUS/Kaggle_Santander_Value_Prediction_Challenge/blob/master/xgboost_models/combine_xgboost_with_lasso.ipynb), but did not give any tangible benefit.

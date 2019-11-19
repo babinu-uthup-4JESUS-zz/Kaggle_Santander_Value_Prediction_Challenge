@@ -13,6 +13,7 @@ This is my solution to the problem posted as part of the  [kaggle competition on
 - [Approach](#approach)
     - [First look at data](#first-look-at-data)
     - [Building simple models](#building-simple-models)    
+    - [Key_idea](#key-idea)        
 
 ## Overview
 
@@ -55,3 +56,7 @@ Lasso models have been constructed in the [R programming language](https://githu
 However, things looked a lot better when lasso models were constructed in [Python](https://github.com/babinu-uthup-4JESUS/Kaggle_Santander_Value_Prediction_Challenge/blob/master/lasso_models/lasso_in_python.ipynb), giving us a test score of around 1.99, while trained with the optimal value of the lasso parameter, which in turned was obtained by cross validation on the training set.
 
 A combination of lasso and gradient boosting methods was [explored](https://github.com/babinu-uthup-4JESUS/Kaggle_Santander_Value_Prediction_Challenge/blob/master/xgboost_models/combine_xgboost_with_lasso.ipynb), but did not give any tangible benefit.
+
+### Key idea
+
+The key idea here is to transform the response variable to be on the logarithmic scale, enabling the prediction algorithm to use root mean squared error optimization directly, resulting in faster convergence and better accuracy. [An xgboost algorithm trained in this manner](https://github.com/babinu-uthup-4JESUS/Kaggle_Santander_Value_Prediction_Challenge/blob/master/xgboost_models/xgboost_non_sparse_columns.ipynb), on the most dense predictors gave us a test score of around 1.46, a big jump from the previous value of 1.99.

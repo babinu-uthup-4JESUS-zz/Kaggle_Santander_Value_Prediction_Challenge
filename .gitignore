@@ -3,4 +3,6 @@ input/test.csv
 lasso_models/*.csv
 lasso_models/*/*.csv
 lasso_models/*/*Rapp*
+*__pycache__*
+*submission_*.csv
 

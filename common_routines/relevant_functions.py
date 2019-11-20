@@ -7,6 +7,25 @@ from sklearn.pipeline import make_pipeline
 from sklearn.preprocessing import Imputer
 from sklearn import linear_model
 
+def get_train_test_data(input_dir):
+    train = pd.read_csv(input_dir + 'train.csv')
+    test = pd.read_csv(input_dir + 'test.csv')
+    train['log_target'] = np.log(train['target']) + 1.0
+    return (train, test)
+
+def get_train_data(input_dir):
+    train = pd.read_csv(input_dir + 'train.csv')
+    train['log_target'] = np.log(train['target']) + 1.0
+    return train
+
+def get_test_data(input_dir):
+    test = pd.read_csv(input_dir + 'test.csv')
+    return test
+
+def get_all_predictor_cols(train):
+    cols = [col for col in train.columns if col not in ['ID', 'target', 'log_target']]
+    return cols
+
 def evaluate_model_score(my_model, X, Y):
     predictions = my_model.predict(X)
     return evaluate_model_score_given_predictions(predictions, Y)
@@ -47,14 +66,14 @@ def cross_val_score_given_model(my_model, X, Y, cv=5):
 def fit_pipeline_and_cross_validate(my_pipeline,
                                     train_data,
                                     X_columns,
-                                    Y_column='new_target'):
+                                    Y_column='log_target'):
     X = train_data[X_columns]
     Y = train_data[[Y_column]].values.ravel()
     my_pipeline.fit(X, Y)
     return (my_pipeline, cross_val_score_given_model(my_pipeline, X, Y))
 
 def get_rel_cols(percent_threshold, data):
-    cols_apart_from_id_and_target = [col for col in data.columns if col not in ['ID', 'target', 'new_target']]
+    cols_apart_from_id_and_target = [col for col in data.columns if col not in ['ID', 'target', 'log_target']]
 
     non_zero_percent_for_col = np.zeros(len(cols_apart_from_id_and_target))
 

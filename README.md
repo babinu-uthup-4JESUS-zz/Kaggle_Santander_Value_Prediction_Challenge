@@ -12,8 +12,7 @@ This is my solution to the problem posted as part of the  [kaggle competition on
     - [File Descriptions](#file-descriptions)
 - [Approach](#approach)
     - [First look at data](#first-look-at-data)
-    - [Building simple models](#building-simple-models)    
-    - [Key_idea](#key-idea)        
+    - [Linear Regression](#linear-regression)    
 
 ## Overview
 
@@ -47,16 +46,8 @@ The approach is to have a thorough look at the data, validate the same and decid
 
 ### First look at data
 
-This has been carried out in [take_a_look_at_data.ipynb](https://github.com/babinu-uthup-4JESUS/Kaggle_Santander_Value_Prediction_Challenge/blob/master/first_look/take_a_look_at_data.ipynb). To summarize,  we went over the data, validated the same and concluded that nature of data itself warrants training of a lasso model on the same as a starting step.
+This has been carried out in [take_a_look_at_data.ipynb](https://github.com/babinu-uthup-4JESUS/Kaggle_Santander_Value_Prediction_Challenge/blob/master/first_look/take_a_look_at_data.ipynb). To summarize,  we went over the data, validated the same and decided to try out various modeling techniques starting with linear regression.
 
-### Building simple models
+### Linear Regression
 
-Lasso models have been constructed in the [R programming language](https://github.com/babinu-uthup-4JESUS/Kaggle_Santander_Value_Prediction_Challenge/blob/master/lasso_models/r_code/lasso.R) and predictions have been made over test data using [Python](https://github.com/babinu-uthup-4JESUS/Kaggle_Santander_Value_Prediction_Challenge/blob/master/lasso_models/predict_with_lasso_model_from_coefficients.ipynb). While this was a good starting point, the models themselves do not look to be providing us with much predictive power, as the prediction scores over the test set were only around 5.5.
-
-However, things looked a lot better when lasso models were constructed in [Python](https://github.com/babinu-uthup-4JESUS/Kaggle_Santander_Value_Prediction_Challenge/blob/master/lasso_models/lasso_in_python.ipynb), giving us a test score of around 1.99, while trained with the optimal value of the lasso parameter, which in turned was obtained by cross validation on the training set.
-
-A combination of lasso and gradient boosting methods was [explored](https://github.com/babinu-uthup-4JESUS/Kaggle_Santander_Value_Prediction_Challenge/blob/master/xgboost_models/combine_xgboost_with_lasso.ipynb), but did not give any tangible benefit.
-
-### Key idea
-
-The key idea here is to transform the response variable to be on the logarithmic scale, enabling the prediction algorithm to use root mean squared error optimization directly, resulting in faster convergence and better accuracy. [An xgboost algorithm trained in this manner](https://github.com/babinu-uthup-4JESUS/Kaggle_Santander_Value_Prediction_Challenge/blob/master/xgboost_models/xgboost_non_sparse_columns.ipynb), on the most dense predictors gave us a test score of around 1.46, a big jump from the previous value of 1.99.
+Linear regression was explored with various predictors and a cross validation score was computed over the entire training data set. Though, this did not yield us any notable prediction score on the test set, it was an important starting point and prompted us to inspect the heteroskedasticity of the predictors.

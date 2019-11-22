@@ -13,6 +13,7 @@ This is my solution to the problem posted as part of the  [kaggle competition on
 - [Approach](#approach)
     - [First look at data](#first-look-at-data)
     - [Linear Regression](#linear-regression)    
+    - [Principal Components Analysis](#principal-components-analysis)        
 
 ## Overview
 
@@ -50,4 +51,8 @@ This has been carried out in [take_a_look_at_data.ipynb](https://github.com/babi
 
 ### Linear Regression
 
-Linear regression was [explored with various predictors](https://github.com/babinu-uthup-4JESUS/Kaggle_Santander_Value_Prediction_Challenge/blob/master/modelling_approaches/linear_regression/linear_regression.ipynb) and a cross validation score was computed over the entire training data set. Though, this did not yield us any notable prediction score on the test set(of 1.97), it was an important starting point and prompted us to inspect the heteroskedasticity of the predictors.
+Linear regression was [explored with various predictors](https://github.com/babinu-uthup-4JESUS/Kaggle_Santander_Value_Prediction_Challenge/blob/master/modelling_approaches/linear_regression/linear_regression.ipynb) and a cross validation score was computed over the entire training data set. Though, this did not yield us any notable prediction score on the test set(of 1.91), it was an important starting point and prompted us to inspect the heteroskedasticity of the predictors.
+
+### Principal Components Analysis
+
+Principal Components Analysis was [explored,](https://github.com/babinu-uthup-4JESUS/Kaggle_Santander_Value_Prediction_Challenge/blob/master/modelling_approaches/principal_components_analysis/principal_components_analysis.ipynb) both with original predictors as well as log transformed ones. This gave us a slight improvement on the prediction score on the test set to 1.87.

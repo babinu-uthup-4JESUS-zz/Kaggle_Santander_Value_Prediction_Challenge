@@ -14,6 +14,7 @@ This is my solution to the problem posted as part of the  [kaggle competition on
     - [First look at data](#first-look-at-data)
     - [Linear Regression](#linear-regression)    
     - [Principal Components Analysis](#principal-components-analysis)        
+    - [Lasso](#lasso)            
 
 ## Overview
 
@@ -56,3 +57,7 @@ Linear Regression was [explored with various predictors](https://github.com/babi
 ### Principal Components Analysis
 
 Principal Components Analysis was [explored,](https://github.com/babinu-uthup-4JESUS/Kaggle_Santander_Value_Prediction_Challenge/blob/master/modelling_approaches/principal_components_analysis/principal_components_analysis.ipynb) both with original predictors as well as log transformed ones. This gave us a slight improvement on the prediction score on the test set to 1.87.
+
+### Lasso
+
+Lasso was [explored,](https://github.com/babinu-uthup-4JESUS/Kaggle_Santander_Value_Prediction_Challenge/blob/master/modelling_approaches/lasso/lasoo.ipynb) and this gave us a minor bump in the prediction score on the test set to 1.75.

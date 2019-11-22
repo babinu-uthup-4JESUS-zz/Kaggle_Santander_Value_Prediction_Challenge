@@ -60,4 +60,4 @@ Principal Components Analysis was [explored,](https://github.com/babinu-uthup-4J
 
 ### Lasso
 
-Lasso was [explored,](https://github.com/babinu-uthup-4JESUS/Kaggle_Santander_Value_Prediction_Challenge/blob/master/modelling_approaches/lasso/lasoo.ipynb) and this gave us a minor bump in the prediction score on the test set to 1.75.
+Lasso was [explored,](https://github.com/babinu-uthup-4JESUS/Kaggle_Santander_Value_Prediction_Challenge/blob/master/modelling_approaches/lasso/lasso.ipynb) and this gave us a minor bump in the prediction score on the test set to 1.75.

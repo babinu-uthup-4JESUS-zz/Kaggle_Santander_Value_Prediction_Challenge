@@ -10,12 +10,12 @@ from sklearn import linear_model
 def get_train_test_data(input_dir):
     train = pd.read_csv(input_dir + 'train.csv')
     test = pd.read_csv(input_dir + 'test.csv')
-    train['log_target'] = np.log(train['target']) + 1.0
+    train['log_target'] = np.log(train['target'] + 1.0)
     return (train, test)
 
 def get_train_data(input_dir):
     train = pd.read_csv(input_dir + 'train.csv')
-    train['log_target'] = np.log(train['target']) + 1.0
+    train['log_target'] = np.log(train['target'] + 1.0)
     return train
 
 def get_test_data(input_dir):

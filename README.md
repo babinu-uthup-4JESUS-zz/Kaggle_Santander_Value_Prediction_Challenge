@@ -15,6 +15,8 @@ This is my solution to the problem posted as part of the  [kaggle competition on
     - [Linear Regression](#linear-regression)    
     - [Principal Components Analysis](#principal-components-analysis)        
     - [Lasso](#lasso)            
+    - [Random Forest using sklearn](#random_forest_using_sklearn)                
+    - [Gradient boosting using sklearn](#gradient_boosting_using_sklearn)                    
 
 ## Overview
 
@@ -61,3 +63,11 @@ Principal Components Analysis was [explored,](https://github.com/babinu-uthup-4J
 ### Lasso
 
 Lasso was [explored,](https://github.com/babinu-uthup-4JESUS/Kaggle_Santander_Value_Prediction_Challenge/blob/master/modelling_approaches/lasso/lasso.ipynb) and this gave us a minor bump in the prediction score on the test set to 1.75.
+
+### Random Forest using sklearn
+
+Random Forest was [implemented using sklearn package](https://github.com/babinu-uthup-4JESUS/Kaggle_Santander_Value_Prediction_Challenge/blob/master/modelling_approaches/random_forest/random_forest_sklearn.ipynb), and gave a us a major boost in the prediction score on the test set to 1.45.
+
+### Gradient boosting using sklearn
+
+Gradient boosting was [implemented using sklearn package](https://github.com/babinu-uthup-4JESUS/Kaggle_Santander_Value_Prediction_Challenge/blob/master/modelling_approaches/gradient_boosting/gradient_boosting_sklearn.ipynb), and gave us prediction score of 1.49 on the test set.

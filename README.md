@@ -17,6 +17,7 @@ This is my solution to the problem posted as part of the  [kaggle competition on
     - [Lasso](#lasso)            
     - [Random Forest using sklearn](#random_forest_using_sklearn)                
     - [Gradient boosting using sklearn](#gradient_boosting_using_sklearn)                    
+    - [Gradient boosting using lightgbm](#gradient_boosting_using_lightgbm)                        
 
 ## Overview
 
@@ -71,3 +72,7 @@ Random Forest was [implemented using sklearn package](https://github.com/babinu-
 ### Gradient boosting using sklearn
 
 Gradient boosting was [implemented using sklearn package](https://github.com/babinu-uthup-4JESUS/Kaggle_Santander_Value_Prediction_Challenge/blob/master/modelling_approaches/gradient_boosting/gradient_boosting_sklearn.ipynb), and gave us prediction score of 1.49 on the test set.
+
+### Gradient boosting using lightgbm
+
+Gradient boosting was [implemented using lightgbm package](https://github.com/babinu-uthup-4JESUS/Kaggle_Santander_Value_Prediction_Challenge/blob/master/modelling_approaches/gradient_boosting/gradient_boosting_lightgbm.ipynb), and gave us prediction score of 1.47 on the test set.

@@ -13,12 +13,12 @@ This is my solution to the problem posted as part of the  [kaggle competition on
 - [Approach](#approach)
     - [First look at data](#first-look-at-data)
     - [Linear Regression](#linear-regression)    
-    - [Principal Components Analysis](#principal-components-analysis)        
+    - [Principal Components Analysis](#principal-components-analysis)       
     - [Lasso](#lasso)            
-    - [Random Forest using sklearn](#random_forest_using_sklearn)                
-    - [Gradient boosting using sklearn](#gradient_boosting_using_sklearn)                    
-    - [Gradient boosting using lightgbm](#gradient_boosting_using_lightgbm)                        
-    - [Gradient boosting using h2o](#gradient_boosting_using_h2o)                            
+    - [Random Forest using sklearn](#random-forest-using-sklearn)                
+    - [Gradient boosting using sklearn](#gradient-boosting-using-sklearn)                    
+    - [Gradient boosting using lightgbm](#gradient-boosting-using-lightgbm)                        
+    - [Gradient boosting using h2o](#gradient-boosting-using-h2o)                            
 
 ## Overview
 

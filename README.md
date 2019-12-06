@@ -19,6 +19,8 @@ This is my solution to the problem posted as part of the  [kaggle competition on
     - [Gradient boosting using sklearn](#gradient-boosting-using-sklearn)                    
     - [Gradient boosting using lightgbm](#gradient-boosting-using-lightgbm)                        
     - [Gradient boosting using h2o](#gradient-boosting-using-h2o)                            
+    - [Exploiting time series property in the data](#exploiting-time-series-property-in-the-data)                             
+- [Conclusion](#conclusion)
 
 ## Overview
 
@@ -81,3 +83,11 @@ Gradient boosting was [implemented using lightgbm package](https://github.com/ba
 ### Gradient boosting using h2o
 
 Gradient boosting was [implemented using h20 package](https://github.com/babinu-uthup-4JESUS/Kaggle_Santander_Value_Prediction_Challenge/blob/master/modelling_approaches/gradient_boosting/gradient_boosting_h2o.ipynb), and gave us prediction score of 1.54 on the test set.
+
+### Exploiting time series property in the data
+
+This was [unearthed](https://www.kaggle.com/titericz/the-property-by-giba) by Giba and a  combination exploiting this techinque along with gradient boosting technique using lightgbm was [implemented](https://github.com/babinu-uthup-4JESUS/Kaggle_Santander_Value_Prediction_Challenge/blob/master/modelling_approaches/explore_giba_property/explore_giba_property.ipynb)(it was essentially a replication of [this kaggle kernel](https://www.kaggle.com/dfrumkin/a-simple-way-to-use-giba-s-features-v2)). This gave us a major bump in the prediction score on the test set to 0.71.
+
+## Conclusion
+
+The major breakthrough in this project came from [understanding Giba's property.](https://www.kaggle.com/titericz/the-property-by-giba) and a reasonable model can become a very good one, if predictions using the aforementioend time series property are combined with the same. In our case, our prediction score improved from 1.47 to 0.71, when predictions obtained using the time series property were combined with the predictions from the lightgbm model.

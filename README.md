@@ -90,4 +90,4 @@ This was [unearthed](https://www.kaggle.com/titericz/the-property-by-giba) by Gi
 
 ## Conclusion
 
-The major breakthrough in this project came from [understanding Giba's property.](https://www.kaggle.com/titericz/the-property-by-giba) and a reasonable model can become a very good one, if predictions using the aforementioend time series property are combined with the same. In our case, our prediction score improved from 1.47 to 0.71, when predictions obtained using the time series property were combined with the predictions from the lightgbm model.
+The major breakthrough in this project came from [understanding Giba's property.](https://www.kaggle.com/titericz/the-property-by-giba) and a reasonable model can become a very good one, if predictions using the aforementioend time series property are combined with the same. In our case, our prediction score improved from 1.47 to 0.71, when predictions obtained using the time series property were combined with the predictions obtained from the lightgbm model.
